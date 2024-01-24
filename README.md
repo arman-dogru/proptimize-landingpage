@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# Proptimize Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Responsive landing page designed to showcase our services and engage users effectively. This project is built using React and employs various components to create an interactive user experience.
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Before you begin, ensure you have the following tools installed:
 
-### `npm test`
+- Node.js (v12.0.0 or higher)
+- npm (usually comes with Node.js)
+- Git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. **Clone the Repo**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/arman-dogru/proptimize-landingpage.git
+   cd proptimize-landingpage
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install NPM Packages**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   Install all the necessary NPM packages:
 
-### `npm run eject`
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Start the Development Server**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   Run the following command to start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   After running this command, your default web browser should open the project running at `http://localhost:3000`.
 
-## Learn More
+## Development Workflow
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Branching Strategy
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Main branch: `main`
+- Component branches: `component/<component_name>`
+- Bugfix branches: `bugfix/<bugfix_name>`
 
-### Code Splitting
+### Common Git Commands
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **To create a new branch:**
 
-### Analyzing the Bundle Size
+  ```bash
+  git checkout -b <branch_name>
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **To switch between branches:**
 
-### Making a Progressive Web App
+  ```bash
+  git checkout <branch_name>
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **To add changes:**
 
-### Advanced Configuration
+  ```bash
+  git add .
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **To commit changes:**
 
-### Deployment
+  ```bash
+  git commit -m "Commit message"
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **To pull the latest changes from remote:**
 
-### `npm run build` fails to minify
+  ```bash
+  git pull origin <branch_name>
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **To push changes to remote:**
+
+  ```bash
+  git push origin <branch_name>
+  ```
+
+- **To merge a branch into main (after pull request approval):**
+
+  ```bash
+  git checkout main
+  git pull origin main
+  git merge <branch_name>
+  git push origin main
+  ```
