@@ -1,0 +1,76 @@
+.container{
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.container--top{
+    min-height: 40vh;
+    padding-top: 20px;
+}
+.container--top h1{
+    font-size: 3rem;
+    padding-top: 10px;
+    font-weight: lighter;
+    font-style: italic;
+}
+.container--top h2{
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+.btn{
+    font: inherit;
+    margin: 10px;
+    min-width: 150px;
+    height: 50px;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+    border: none;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(47, 56, 47);
+    color: white;
+}
+.btn-right{
+    background-color: rgb(41, 41, 82);
+    color: white;
+}
+.btn-right:hover{
+    color: black;
+}
+.right-section .btn:hover{
+    background-color: white;
+}
+.container--bottom{
+    padding-top: 50px;
+    min-height: 50vh;
+    display: flex;
+}
+.left-section{
+    min-width: 40%;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-section h2{
+    font-weight: lighter;
+    margin-right: 140px;
+    text-decoration: underline;
+    
+}
+.right-section{
+    min-width: 60%;
+    background-color: rgb(47, 56, 47);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.right-section p{
+    min-width: 350px;
+}
