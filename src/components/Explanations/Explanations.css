@@ -1,0 +1,48 @@
+.Explanations-Container {
+    background-color: rgb(254, 249, 245);
+}
+
+.Heading-Images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    width: 70vw;
+    margin: auto;
+}
+
+.Pic {
+    border: none;
+    height: 65vh;
+    width: 20vw;
+    border-radius: 9em;
+}
+
+.Explanations-Para {
+    width: 75vw;
+    margin: auto;
+    font-size: x-large;
+    line-height: 1.8;
+}
+
+.Explanations-Para mark {
+    background-color: black;
+    color: white;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+
+}

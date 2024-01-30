@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import "../DiscoverRedirect/DiscoverRedirect.css";
 
 const DiscoverRedirect = () => {
   let navigate = useNavigate();
@@ -9,13 +10,15 @@ const DiscoverRedirect = () => {
   };
 
   return (
-    <div>
-      <div>
-        <h2>About Proptimize</h2>
-        <p>Discover how we can help you...</p>
+    <div className='Discover-Conatiner'>
+      <div className='Discover-About'>
+        <h2 className='About-Text'>About</h2>
       </div>
-      <div>
-        <button onClick={navigateToDiscover}>Discover More</button>
+      <div className='Discover-Content'>
+        <p className='Discover-Text'>At Proptimize, we're committed to empowering university students and 
+          young professionals by helping them find a place they call can home. </p>
+        <p className='Horizontal-line'></p>
+        <button className='DiscoverMore-btn' onClick={navigateToDiscover}>{">"}</button>
       </div>
     </div>
   );

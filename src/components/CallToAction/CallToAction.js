@@ -2,17 +2,16 @@ import React from 'react';
 
 const CallToAction = () => {
   return (
-    <div>
-      <h2>Join Us Now!</h2>
-      <p>Slogan or Call to Action Text</p>
-      <form>
-        <input type="email" placeholder="Your Email" />
-        <button type="submit">Subscribe</button>
-      </form>
-      <video autoPlay loop muted>
-        <source src="path_to_background_video.mp4" type="video/mp4" />
-      </video>
-    </div>
+    <form className='SignupContent'>
+      <h3 className='SignupHeading'>#BeAProptimizer</h3>
+      <h2>Join the Proptimizer Community!</h2>
+      <p>Join our pre-launch community and get a free guide about renting.</p>
+      <span className='SignupDetails'>
+        <label><b>Enter your email here*</b></label><br />
+        <input id='SignupInput' type="email" />
+        <button id='SignupButton' type="submit">Sign Up!</button>
+      </span>
+    </form>
   );
 };
 

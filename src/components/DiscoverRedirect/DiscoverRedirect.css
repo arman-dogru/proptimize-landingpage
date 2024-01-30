@@ -1,0 +1,50 @@
+.Discover-Conatiner{
+    height: 40vh;
+    display: flex;
+}
+.Discover-About{
+    width: 38vw;
+    border: 1px solid black;
+    background-color: black;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.About-Text{
+    font-size: 6em;
+    font-weight: lighter;
+    text-decoration: underline;
+    text-decoration-thickness:0.3rem;
+}
+.Discover-Content{
+    border: 1px solid black;
+    width: 62vw;
+    background-color:rgb(93, 111, 104) ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Discover-Text{
+    width: 30vw;
+    font-size: large;
+}
+.Horizontal-line{
+    border-bottom: 1px solid white;
+    width: 5rem;
+}
+.DiscoverMore-btn{
+    border: none;
+    height: 3rem;
+    width: 7rem;
+    border-radius: 2rem;
+    font-size: xx-large;
+    background-color: rgb(50, 65, 88);
+}
+.DiscoverMore-btn:hover{
+    cursor: pointer;
+    background-color:rgb(254, 249, 245);
+    color: black;
+}

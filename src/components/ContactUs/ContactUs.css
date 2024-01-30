@@ -1,0 +1,90 @@
+.ContactUs-Content{
+    height: 90vh;
+    display: flex;
+}
+.Address-Content{
+    width: 50vw;
+    flex: 1;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+.Nav-Section{
+    width: 30vw;
+    margin-left: 2em;
+    margin-top: 5em;
+}
+.Conatct-Navigation:hover{
+    color:darkorange;
+    cursor: pointer;
+}
+.Address-Section{
+    font-size: x-large;
+    width: 16vw;
+    margin-top: 3em;
+    font-weight: lighter;
+}
+
+.UserDetails-Content{
+    width: 50vw;
+    flex: 1;
+    background-color: RGB(254, 249, 245);
+}
+#Mail{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 0;
+}
+.UserDetails-form{
+    width:30vw;
+    margin: auto;
+    font-size: larger;
+    font-weight: lighter;
+    margin-top: 4em;
+}
+.UserDetails-input{
+    width: 15vw;
+    height: 2vw;
+    outline: none;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+.UserDetails-input:hover{
+ border: 2px solid black;
+}
+
+.UserDetails-input-Email{
+    width: 25vw;
+    height: 2vw;
+    outline: none;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+.UserDetails-input-Email:hover{
+    border: 2px solid black;
+}
+
+.UserDetails-input-Message{
+    width: 25vw;
+    height: 5vw;
+    outline: none;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+.UserDetails-input-Message:hover{
+    border: 2px solid black;
+}
+
+#UserDetails-SendBtn{
+    background-color:rgb(83, 99, 93) ;
+    width: 25vw;
+    height: 2vw;
+    border-radius: 2vw;
+    font-size: large;
+}
+#UserDetails-SendBtn:hover{
+    background-color: black;
+    color: white;
+    transition-delay: 0.1s;
+}

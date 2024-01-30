@@ -1,0 +1,37 @@
+.container{
+    min-height: 50vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-top{
+    min-height: 30vh;
+}
+.container-top h1{
+    font-size: 3rem;
+    font-weight: lighter;
+    font-style: italic;
+}
+.container-top h2{
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+.horizontal-line{
+    color: white;
+
+}
+.btn{
+    border: none;
+    height: 3rem;
+    width: 7rem;
+    border-radius: 2rem;
+    font-size: xx-large;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(47, 56, 47);
+    color: white;
+}

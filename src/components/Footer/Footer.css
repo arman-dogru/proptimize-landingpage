@@ -1,0 +1,19 @@
+.Footer-Section{
+    color: white;
+    height: 20vh;
+    display: flex;
+}
+.Footer-Section-1{
+    width: 50vw;
+    background-color: black;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Footer-Section-2{
+    width: 50vw;
+    height: 20vh;
+    background-color: RGB(254, 249, 245);
+}
+.Socials{
+    background-color: black;
+}

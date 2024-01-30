@@ -1,0 +1,60 @@
+.grid-container {
+    background-color: rgb(254, 249, 245);
+    color: black;
+}
+
+.grid-item {
+    height: 60vh;
+    display: flex;
+}
+
+.Image-Section {
+    width: 40vw;
+    height: 60vh;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+}
+
+.grid-img {
+    height: 50vh;
+    width: 30vw;
+    transition: transform 0.5s ease;
+}
+.grid-img:hover{
+    transform: scale(1.1);
+}
+
+.Text-Section {
+    width: 40vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5em;
+    transition: transform 0.4s ease;
+}
+.Text-Section:hover{
+    transform: scale(1.1);
+}
+.Image-Heading{
+    font-size: xx-large;
+    font-weight: 900;
+}
+.Image-P{
+    margin-top:0;
+}
+.Text-Know-Btn{
+    width: 10em;
+    height: 2.5em;
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    border-radius: 1em;
+    border: none;
+}
+.Text-Know-Btn:hover{
+    cursor: pointer;
+    background-color: rgb(254, 249, 245);
+    color: black;
+}
