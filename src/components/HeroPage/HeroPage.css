@@ -1,99 +1,164 @@
-@media screen and (max-width: 768px) {
-    .ShortIntro {
-        font-size: 1.2rem;
-    }
-}
-@media screen and (max-width: 480px) {
-    .ShortIntro {
-        font-size: 1rem;
-    }
-}
 .ShortIntro {
-    height: 80vh;
-    text-align: center;
-    font-size: 1.7rem;
-    letter-spacing: 0.08rem;
-    line-height: 1.8;
-    font-weight: lighter;
-    background-color:black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    position: relative; 
-  }
-  
-  .ShortIntro.video-background {
-    background-color: transparent; 
-  }
-  
-  .background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .text-content {
-    position: relative;
-    z-index: 1; 
-  }
-  
+  text-align: center;
+  font-size: 1.7rem;
+  letter-spacing: 0.08rem;
+  line-height: 1.5;
+  font-weight: lighter;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
 
-.IntroSlogan{
-    font-family: Arial,Helvetica, sans-serif;
-    background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf, #eedd44);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+.ShortIntro.video-background {
+  background-color: transparent;
 }
-.Intro-text{
-    font-size: 1.5rem;
-    width: 70vw;
-    padding: 2em;
-    font-style: italic;
-}
-.Intro-text:hover{
-    border: 0.7em solid white;
-}
-#Get-Btn{
-    height: 4em;
-    width: 17em;
-    background-color: white;
-    font-size: 1rem;
-    border: 0.5px solid black;
-    font-weight: 900;
-}
-#Get-Btn:hover{
-    cursor: pointer;
-    border: 5px solid orange;
-    font-size: 1.1rem;
 
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.HeroP-Slogan2{
-    height: 100vh;
-    text-align: center;
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(254, 249, 245);
+
+.text-content {
+  position: relative;
+  z-index: 1;
+  align-items: center;
 }
-    
-#Video-2{
-    width: 70vw;
-    height:80vh;
-    position: absolute;
+
+.IntroSlogan {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.Intro-text {
+  font-size: 1.5rem;
+  width: 70vw;
+  padding: 2em;
+  font-style: italic;
+}
+.Intro-text:hover {
+  border: 0.5em solid white;
+}
+#Get-Btn {
+  height: 4em;
+  width: 17em;
+  background-color: white;
+  font-size: 1rem;
+  border: 0.5px solid black;
+  font-weight: 900;
+}
+
+#Get-Btn:hover {
+  cursor: pointer;
+  border: 4px solid orange;
+  font-size: 1rem;
+}
+
+.HeroP-Slogan2 {
+  height: 90vh;
+  text-align: center;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(254, 249, 245);
+  padding: 1em;
+}
+
+.Video-2 {
+  margin-top: 3em;
+  width: 83vw;
+  height: 44vw;
+  position: relative;
+  border-radius: 10em;
+  border: none;
+}
+
+.HeroP-Content {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: xx-large;
+}
+
+@media screen and (max-width: 1150px) {
+  .HeroP-Slogan2 {
+    height: fit-content;
+  }
+  .Video-2 {
+    width: 95%;
+    height: 52%;
     border-radius: 10em;
-    border: none;
-   
+  }
 }
-.HeroP-Content{
+
+@media screen and (max-width: 768px) {
+  .ShortIntro {
+    font-size: 1.5em;
+  }
+  .Intro-text {
+    margin: auto;
+    padding: 1em;
+  }
+  .heropagecontainer {
+    display: block;
+    height: fit-content;
+  }
+  .HeroP-Content {
+    font-size: larger;
+  }
+  .HeroP-Slogan2 {
+    height: fit-content;
+  }
+  .Video-2 {
+    width: 100%;
+    height: 52%;
+    border-radius: 4em;
+  }
+  .HeroP-Content h1 {
+    font-size: 1.5em;
+  }
+  .HeroP-Content p {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ShortIntro {
+    font-size: 0.7rem;
+    padding: 1em;
+  }
+  .Intro-text {
+    margin: auto;
+    padding: 1em;
+  }
+  .ShortIntro.video-background {
+    height: fit-content;
+  }
+  .HeroP-Slogan2 {
+    height: fit-content;
+  }
+
+  .HeroP-Content {
     position: absolute;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: xx-large;
+    font-size: large;
+  }
+  .HeroP-Content h1 {
+    font-size: large;
+  }
+  .HeroP-Content p {
+    font-size: medium;
+  }
 }

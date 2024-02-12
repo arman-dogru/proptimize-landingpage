@@ -9,7 +9,7 @@ const Explanation = () => {
   return (
     <div className='Explaination-Container'>
       <h1 className='Explanination-Heading'>How do we help you find a home?</h1>
-      <div className='Text-Conatiner'>
+      <div className='Text-Container'>
         <div className='Text-Para1'>
           <section>
             <p className='Para-Heading'>Interactive map and Area Amenities.</p>

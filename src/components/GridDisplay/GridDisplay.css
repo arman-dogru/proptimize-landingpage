@@ -1,7 +1,15 @@
-.Grid-Full{
-    height: 100vh;
+.Grid-Full {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-.Grid-Image{
-    height: 50vh;
-    width: 32.5vw;
+.Grid-Image {
+  height: 50vh;
+  width: 32.5vw;
+}
+@media screen and (max-width: 620px) {
+  .Grid-Full{
+    display: none;
+  }
 }

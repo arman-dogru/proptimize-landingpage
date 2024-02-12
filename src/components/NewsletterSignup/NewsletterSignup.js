@@ -6,8 +6,11 @@ const NewsletterSignup = () => {
       <h3 className='SignupHeading'>Join our pre-launch community <br/> & get a free guide to renting!</h3>
       <span className='SignupDetails'>
       <label><b>Enter your email here*</b></label><br/>
-      <input id='SignupInput' type="email"/>
+      <div className='signupform'>
+        <input id='SignupInput' type="email"/>
       <button id='SignupButton' type="submit">Sign Up!</button>
+      </div>
+      
       </span>
     </form>
   );

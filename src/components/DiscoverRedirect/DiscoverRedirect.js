@@ -10,7 +10,7 @@ const DiscoverRedirect = () => {
   };
 
   return (
-    <div className='Discover-Conatiner'>
+    <div className='Discover-Container'>
       <div className='Discover-About'>
         <h2 className='About-Text'>About</h2>
       </div>

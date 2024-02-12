@@ -1,60 +1,129 @@
 .grid-container {
-    background-color: rgb(254, 249, 245);
-    color: black;
+  background-color: rgb(254, 249, 245);
+  color: black;
 }
 
 .grid-item {
-    height: 60vh;
-    display: flex;
+  height: 60vh;
+  display: flex;
 }
 
 .Image-Section {
-    width: 40vw;
-    height: 60vh;
-    display: flex;
-    align-items:center;
-    justify-content: flex-end;
+  width: 40vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .grid-img {
-    height: 50vh;
-    width: 30vw;
-    transition: transform 0.5s ease;
+  height: 50vh;
+  width: 30vw;
+  transition: transform 0.5s ease;
 }
-.grid-img:hover{
-    transform: scale(1.1);
+.grid-img:hover {
+  transform: scale(1.1);
 }
 
 .Text-Section {
-    width: 40vw;
-    height: 60vh;
+  width: 40vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5em;
+  transition: transform 0.4s ease;
+}
+.Text-Section:hover {
+  transform: scale(1.1);
+}
+.Image-Heading {
+  font-size: xx-large;
+  font-weight: 900;
+}
+.Image-P {
+  margin-top: 0;
+}
+.Text-Know-Btn {
+  width: 10em;
+  height: 2.5em;
+  font-size: large;
+  color: black;
+  font-weight: bold;
+  border-radius: 1em;
+  border: none;
+}
+.Text-Know-Btn:hover {
+  cursor: pointer;
+  background-color: rgb(254, 249, 245);
+  color: black;
+}
+@media only screen and (max-width: 992px) {
+  .Image-Heading {
+    font-size: x-large;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-item-odd {
+    height: 64vh;
+  }
+  .grid-item {
+    height: 64vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 5em;
-    transition: transform 0.4s ease;
-}
-.Text-Section:hover{
-    transform: scale(1.1);
-}
-.Image-Heading{
-    font-size: xx-large;
-    font-weight: 900;
-}
-.Image-P{
-    margin-top:0;
-}
-.Text-Know-Btn{
-    width: 10em;
-    height: 2.5em;
+  }
+  .Image-Heading {
     font-size: large;
+  }
+  .grid-img {
+    height: 36vh;
+    width: 32vw;
+  }
+  .Text-Know-Btn {
+    width: 9em;
+    height: 2em;
+    font-size: medium;
     color: black;
     font-weight: bold;
     border-radius: 1em;
     border: none;
+  }
 }
-.Text-Know-Btn:hover{
-    cursor: pointer;
-    background-color: rgb(254, 249, 245);
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    height: fit-content;
+    padding: 2em;
+  }
+  .grid-item odd {
+    height: 64vh;
+  }
+  .grid-item {
+    height: 65vh;
+    display: flex;
+    overflow: hidden;
+    margin-top: 2em;
+  }
+  .grid-img {
+    height: 36vh;
+    width: 32vw;
+  }
+  .Image-Heading {
+    font-size: large;
+  }
+  .Image-P {
+    margin-top: 0;
+    font-size: medium;
+  }
+  .Text-Know-Btn {
+    width: 8em;
+    height: 2em;
+    font-size: medium;
     color: black;
+    font-weight: bold;
+    border-radius: 1em;
+    border: none;
+  }
+  .Text-Section {
+    margin-left: 2em;
+  }
 }

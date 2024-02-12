@@ -1,48 +1,77 @@
 .SignupContent {
-    background-image: url("../NewsletterSignup/assets/pexels-fauxels-3183150_edited.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    height: 20vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-image: url("../NewsletterSignup/assets/pexels-fauxels-3183150_edited.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  height: fit-content;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .SignupHeading {
-    margin-top: -1em;
-    letter-spacing: 0.05ch;
-    font-size: xx-large;
-    font-weight:500;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  letter-spacing: 0.05ch;
+  font-size: xx-large;
+  font-weight: 500;
 }
 
 #SignupInput {
-    width: 30vw;
-    height: 3em;
-    background-color: rgba(255, 64, 64, 0.4);
-    border: 3px solid rgb(255, 64, 64);
+  width: 30vw;
+  height: 3em;
+  background-color: rgba(255, 64, 64, 0.4);
+  border: 3px solid rgb(255, 64, 64);
 
-    font-size: large;
-    outline: none;
-    color: white;
+  font-size: large;
+  outline: none;
+  color: white;
 }
-#SignupInput:focus{
-    border: 5px solid rgb(255, 64, 64);
+#SignupInput:focus {
+  border: 5px solid rgb(255, 64, 64);
 }
 
 #SignupButton {
-    margin-left: 0.1em;
-    margin-top: 0.5em;
-    width: 15vw;
-    height: 3.3em;
-    background-color: black;
-    color: white;
-    font-size: large;
-    border: 3px solid snow;
+  margin-left: 0.1em;
+  margin-top: 0.5em;
+  width: 15vw;
+  height: 3.3em;
+  background-color: black;
+  color: white;
+  font-size: large;
+  border: 3px solid snow;
 }
-#SignupButton:hover{
-    background-color:darkgoldenrod;
+#SignupButton:hover {
+  background-color: darkgoldenrod;
+}
+
+@media screen and (max-width: 768px) {
+  .SignupHeading {
+    font-size: x-large;
+  }
+  #SignupInput {
+    width: 50vw;
+    height: 2em;
+  }
+  #SignupButton {
+    width: 25 vw;
+    height: 2.1em;
+  }
+}
+@media screen and (max-width: 600px) {
+  #SignupButton {
+    height: 3.1em;
+  }
+  #SignupInput {
+    margin-top: 0.5em;
+    width: 50vw;
+    height: 3em;
+  }
+  .signupform{
+    display:flex
+  }
 }

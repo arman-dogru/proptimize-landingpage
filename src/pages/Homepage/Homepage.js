@@ -10,7 +10,7 @@ import Footer from '../../components/Footer/Footer';
 
 const Homepage = () => {
   return (
-    <div>
+    <div className='w-full'>
       <Navbar />
       <HeroPage />
       <ExploreGrid />

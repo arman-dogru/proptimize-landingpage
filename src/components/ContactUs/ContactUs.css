@@ -1,90 +1,164 @@
-.ContactUs-Content{
-    height: 90vh;
-    display: flex;
+.ContactUs-Content {
+  height: fit-content;
+  display: flex;
+  max-width: 100vw;
 }
-.Address-Content{
-    width: 50vw;
-    flex: 1;
-    background-color: black;
-    color: white;
-    display: flex;
+.Address-Content {
+  width: 50vw;
+  flex: 1;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
 }
-.Nav-Section{
-    width: 30vw;
-    margin-left: 2em;
-    margin-top: 5em;
+.Nav-Section {
+  width: 30vw;
+  margin-left: 2em;
+  margin-top: 5em;
 }
-.Conatct-Navigation:hover{
-    color:darkorange;
-    cursor: pointer;
+.Conatct-Navigation:hover {
+  color: darkorange;
+  cursor: pointer;
 }
-.Address-Section{
-    font-size: x-large;
+.Address-Section {
+  font-size: large;
+  width: 16vw;
+  margin-top: 3em;
+  font-weight: normal;
+}
+.Address-Section address {
+  margin-bottom: 0;
+}
+
+.UserDetails-Content {
+  width: 50vw;
+  display: flex;
+  background-color: RGB(254, 249, 245);
+}
+#Mail {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 0;
+  margin-top: -2em;
+}
+.UserDetails-form {
+  width: 40vw;
+  margin: 2em;
+  font-size: large;
+  font-weight: lighter;
+  margin-top: 2em;
+}
+.UserDetails-input {
+  margin-left: 1em;
+  width: 23vw;
+  height: 2vw;
+  outline: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.UserDetails-input:hover {
+  border: 2px solid black;
+}
+
+.UserDetails-input-Email {
+  width: 23vw;
+  height: 2vw;
+  outline: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 2.7em;
+}
+.UserDetails-input-Email:hover {
+  border: 2px solid black;
+}
+
+.UserDetails-input-Message {
+  width: 23vw;
+  height: 5vw;
+  margin-left: 5.8em;
+  outline: none;
+  margin-top: -1em;
+  margin-bottom: 1em;
+}
+.UserDetails-input-Message:hover {
+  border: 2px solid black;
+}
+
+#UserDetails-SendBtn {
+  background-color: rgb(0, 0, 0);
+  width: 15vw;
+  height: 4vw;
+  border-radius: 2vw;
+  font-size: large;
+  color: white;
+  margin-left: 7em;
+  font-size: large;
+}
+#UserDetails-SendBtn:hover {
+  background-color: black;
+  color: white;
+  transition-delay: 0.1s;
+}
+@media screen and (max-width: 950px) {
+  .Nav-Section {
+    margin-left: 1em;
+    margin-top: 1em;
+  }
+  .Address-Section {
+    font-size: medium;
     width: 16vw;
-    margin-top: 3em;
-    font-weight: lighter;
-}
-
-.UserDetails-Content{
-    width: 50vw;
-    flex: 1;
-    background-color: RGB(254, 249, 245);
-}
-#Mail{
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    padding: 0;
-}
-.UserDetails-form{
-    width:30vw;
-    margin: auto;
-    font-size: larger;
-    font-weight: lighter;
-    margin-top: 4em;
-}
-.UserDetails-input{
-    width: 15vw;
-    height: 2vw;
-    outline: none;
     margin-top: 1em;
-    margin-bottom: 2em;
+    font-weight: normal;
+  }
 }
-.UserDetails-input:hover{
- border: 2px solid black;
-}
-
-.UserDetails-input-Email{
-    width: 25vw;
-    height: 2vw;
-    outline: none;
-    margin-top: 1em;
-    margin-bottom: 2em;
-}
-.UserDetails-input-Email:hover{
-    border: 2px solid black;
-}
-
-.UserDetails-input-Message{
-    width: 25vw;
-    height: 5vw;
-    outline: none;
-    margin-top: 1em;
-    margin-bottom: 2em;
-}
-.UserDetails-input-Message:hover{
-    border: 2px solid black;
-}
-
-#UserDetails-SendBtn{
-    background-color:rgb(83, 99, 93) ;
-    width: 25vw;
-    height: 2vw;
-    border-radius: 2vw;
+@media screen and (max-width: 790px) {
+  .Nav-Section {
+    margin-left: 0.5em;
+    width: 26vw;
     font-size: large;
+  }
 }
-#UserDetails-SendBtn:hover{
-    background-color: black;
-    color: white;
-    transition-delay: 0.1s;
+@media screen and (max-width: 620px) {
+  .Address-Section {
+    font-size: small;
+  }
+  .Address-Section h3 {
+    font-size: medium;
+  }
+  .Nav-Section h1 {
+    font-size: larger;
+  }
+  .UserDetails-input {
+    display: block;
+    width: 40vw;
+    height: 5vw;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    margin-left: 0em;
+  }
+  .UserDetails-input-Email {
+    display: block;
+    width: 40vw;
+    height: 5vw;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    margin-left: 0;
+  }
+  .UserDetails-input-Message {
+    width: 35vw;
+    height: 10vw;
+    margin-left: 0.1em;
+    outline: none;
+    margin-bottom: 0.1em;
+    margin-top: auto;
+  }
+  #UserDetails-SendBtn {
+    height: 6vw;
+    margin-left: 0;
+    font-size: medium;
+}
 }

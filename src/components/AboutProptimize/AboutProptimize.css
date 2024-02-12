@@ -1,42 +1,48 @@
-.About-Conatiner{
-    display: flex;
-    flex-direction: row;
-    background-color: grey;
-    height: 90vh;
-    align-items: center
+.About-Container {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  align-items: center;
+  min-width: 100vw;
+  background-color: rgb(254, 249, 245)
 }
-.About-Prop{
-    height: 75vh;
-    width: 65vw;
-    background-color: rgb(254, 249, 245) ;
+.About-Prop {
+  height: 100%;
+  width: 65vw;;
 }
-.About-Content{
-    width: 55vw;
-    margin: auto;
+.About-Content {
+  width: 56vw;
+  margin: auto;
 }
-.About-Prop-Heading{
-    font-size: 4em;
-    margin-bottom: 0;
+.About-Prop-Heading {
+  font-size: 4em;
+  margin-bottom: 0;
 }
-.About-Prop-SubHeading{
-    margin:0;
-    font-weight: lighter;
-    font-size: 2em;
+.About-Prop-SubHeading {
+  margin: 0;
+  font-weight: lighter;
+  font-size: 2em;
+  margin-bottom: 0.1em;
 }
-.About-Prop-Para{
-    font-size: 1.2em;
-    transition: transform 0.4s ease;
+.About-Prop-Para {
+  font-size: 1.2em;
+  transition: transform 0.6s ease;
+}
+.About-Prop-Para:hover {
+  transform: scale(1.05);
+}
+.About-Image-prop{
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.AboutIMG {
+  align-items: center;
+  height: 100%;
+  width: 25vw;
+  transition: transform 0.4s ease;
 
 }
-.About-Prop-Para:hover{
-    transform: scale(1.05);
-}
-.AboutIMG{
-    height: 75vh;
-    width: 30vw;
-    margin-left:0.2em;
-    transition: transform 0.4s ease;
-}
-.AboutIMG:hover{
-    transform: scale(1.05);
+.AboutIMG:hover {
+  transform: scale(1.05);
 }
