@@ -160,5 +160,24 @@
     height: 6vw;
     margin-left: 0;
     font-size: medium;
+  }
 }
+@media screen and (max-width: 480px) {
+  .Address-Section {
+    font-size: x-small;
+  }
+  .Nav-Section {
+    font-size: large;
+  }
+  .About-Text {
+    font-size: 3em;
+  }
+  .Discover-Text {
+    width: auto;
+    padding: 0.5em;
+  }
+  .UserDetails-form {
+    margin: 1em;
+    font-size: medium;
+  }
 }

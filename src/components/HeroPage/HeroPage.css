@@ -1,6 +1,7 @@
 .ShortIntro {
   text-align: center;
   font-size: 1.7rem;
+  padding: 0.5em;
   letter-spacing: 0.08rem;
   line-height: 1.5;
   font-weight: lighter;
@@ -63,7 +64,6 @@
 }
 
 .HeroP-Slogan2 {
-  height: 90vh;
   text-align: center;
   display: flex;
   overflow: hidden;

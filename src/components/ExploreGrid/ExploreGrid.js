@@ -12,7 +12,7 @@ const imagesData = [
 
 const ExploreGrid = () => {
   const gridItems = imagesData.map((image, i) => (
-    <div key={i} className={`grid-item ${i % 2 === 0 ? 'even' : 'odd'}`}>
+    <div key={i} className={`grid-item-${i % 2 === 0 ? 'even' : 'odd'}`}>
       {i % 2 === 0 ? (
         <>
           <div className='Image-Section'>
@@ -26,12 +26,12 @@ const ExploreGrid = () => {
         </>
       ) : (
         <>
-          <div className='Text-Section'>
+          <div className='Text-Section-odd'>
             <h3 className="Image-Heading">{image.text}</h3>
             <p className='Image-P'>{image.para}</p> 
             <button className='Text-Know-Btn'> KNOW MORE</button>
           </div>
-          <div className='Image-Section'>
+          <div className='Image-Section-odd'>
             <img className='grid-img' src={image.src} alt={`Grid ${i}`} />
           </div>
         </>

@@ -1,96 +1,123 @@
 .Explaination-Container {
-    background-color: rgb(254, 249, 245);
-    display: block;
-    width: 100vw;
-    height: fit-content;
+  background-color: rgb(254, 249, 245);
+  display: block;
+  width: 100vw;
+  height: fit-content;
 }
 
 .Explanination-Heading {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: lighter;
-    margin-top: 0;
-    padding-top: 1.5rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: lighter;
+  margin-top: 0;
+  padding-top: 1.5rem;
 }
 
 .Text-Container {
-    padding-top: 1em;
-    width: 70vw;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    font-size: large;
+  padding-top: 1em;
+  width: 70vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: large;
 }
 
 .Text-Para1 {
-    align-self: flex-start;
-    width: 20vw;
-    transition: transform 0.35s ease;
+  align-self: flex-start;
+  width: 20vw;
+  transition: transform 0.35s ease;
 }
 
 .Text-Para1:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .Text-Para2 {
-    align-self: center;
-    width: 20vw;
-    transition: transform 0.35s ease;
+  align-self: center;
+  width: 20vw;
+  transition: transform 0.35s ease;
 }
 
 .Text-Para2:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .Text-Para3 {
-    align-self: flex-end;
-    width: 20vw;
-    transition: transform 0.35s ease;
+  align-self: flex-end;
+  width: 20vw;
+  transition: transform 0.35s ease;
 }
 
 .Text-Para3:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .Para-Heading {
-    font-size: 1.3rem;
-    background-color: bisque;
+  font-size: 1.3rem;
+  background-color: bisque;
 }
 
 .Para-Heading {
-    font-size: 1.3rem;
-    background-color: bisque;
+  font-size: 1.3rem;
+  background-color: bisque;
 }
 
 .Para-Content {
-    font-weight: lighter;
+  font-weight: lighter;
 }
-.Discover-Section{
-    padding-top: 1em;
-    width: 50vw;
+.Discover-Section {
+  padding-top: 1em;
+  width: 50vw;
+  margin: auto;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+.Discover-Para {
+  background-color: black;
+  color: white;
+  line-height: 1.8;
+}
+.Discover-btn {
+  border: none;
+  height: 3rem;
+  width: 7rem;
+  border-radius: 2rem;
+  font-size: xx-large;
+  background-color: #3f7652;
+  color: white;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+.Discover-btn:hover {
+  cursor: pointer;
+  background-color: black;
+}
+@media screen and (max-width: 768px) {
+  .Text-Para1,
+  .Text-Para2,
+  .Text-Para3 {
+    align-self: center;
+    width: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Explanination-Heading {
+    font-size: 2rem;
+  }
+  .Text-Para1,
+  .Text-Para2,
+  .Text-Para3 {
+    align-self: center;
+    width: auto;
+  }
+  .Para-Content {
+    font-size: medium;
+}
+.Discover-Section {
+    padding: 1em;
+    width: auto;
     margin: auto;
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: lighter;
+    font-size: 1.1rem;
 }
-.Discover-Para{
-    background-color: black;
-    color: white;
-    line-height: 1.8;
-}
-.Discover-btn{
-    border: none;
-    height: 3rem;
-    width: 7rem;
-    border-radius: 2rem;
-    font-size: xx-large;
-    background-color:#3F7652;
-    color: white;
-    margin-top:0.5em;
-    margin-bottom: 1em;
-
-}
-.Discover-btn:hover{
-    cursor: pointer;
-    background-color: black;
 }

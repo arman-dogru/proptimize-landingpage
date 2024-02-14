@@ -3,11 +3,22 @@
   color: black;
 }
 
-.grid-item {
+.grid-item-odd {
+  height: 60vh;
+  display: flex;
+}
+.grid-item-even {
   height: 60vh;
   display: flex;
 }
 
+.Image-Section-odd {
+  width: 40vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 .Image-Section {
   width: 40vw;
   height: 60vh;
@@ -25,6 +36,15 @@
   transform: scale(1.1);
 }
 
+.Text-Section-odd {
+  width: 40vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5em;
+  transition: transform 0.4s ease;
+}
 .Text-Section {
   width: 40vw;
   height: 60vh;
@@ -94,9 +114,7 @@
     height: fit-content;
     padding: 2em;
   }
-  .grid-item odd {
-    height: 64vh;
-  }
+
   .grid-item {
     height: 65vh;
     display: flex;
@@ -125,5 +143,85 @@
   }
   .Text-Section {
     margin-left: 2em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .grid-item-even {
+    height: auto;
+    padding: 2em;
+  }
+  .grid-item-odd {
+    height: auto;
+    padding: 2em;
+  }
+  .Image-Section {
+    width: auto;
+    height: auto;
+  }
+  .Text-Section {
+    width: auto;
+    height: auto;
+  }
+  .Image-Section-odd {
+    width: auto;
+    height: auto;
+  }
+  .Text-Section-odd {
+    width: auto;
+    height: auto;
+    margin: 0em;
+    padding: 0.5em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .grid-container {
+    height: fit-content;
+    padding: 1em;
+  }
+  .grid-item {
+    display: block;
+    padding: 1em;
+  }
+  .grid-item-odd {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    height: auto;
+  }
+  .grid-item-even {
+    display: block;
+    padding: 1em;
+    height: auto;
+  }
+  .Image-Section {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.5em;
+    width: auto;
+    height: auto;
+  }
+  .Text-Section {
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+
+  .grid-img {
+    width: 17em;
+    height: 14em;
+  }
+  .Image-Section-odd {
+    order: 1;
+    text-align: center;
+    width: auto;
+    height: auto;
+    justify-content: space-around;
+  }
+  .Text-Section-odd {
+    order: 2;
+    width: auto;
+    margin: auto;
+    height: auto;
+    margin-top: 0.5em;
   }
 }

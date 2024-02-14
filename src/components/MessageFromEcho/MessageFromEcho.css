@@ -1,38 +1,48 @@
-.EchoSection{
-    background-image: url(../MessageFromEcho/assets/EchoBack.png);
-    height: fit-content;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.EchoSection {
+  background-image: url(../MessageFromEcho/assets/EchoBack.png);
+  height: fit-content;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.EchoText{
-    width: 80vw;
+.EchoText {
+  width: 80vw;
 }
-.EchoHeading{
-    text-align: center;
-    font-weight: lighter;
-    color:beige;
-    
+.EchoHeading {
+  text-align: center;
+  font-weight: lighter;
+  color: beige;
 }
-.Icon-Container{
-    display: flex;
-
+.Icon-Container {
+  display: flex;
+  margin-bottom: 0.5em;
 }
-.Echo-icon{
-    height: 2em;
-    width: 2em;
-    margin-right: 1em;
+.Echo-icon {
+  height: 2em;
+  width: 2em;
+  margin-right: 1em;
 }
-.Icon-text{
-    font-size: x-large;
+.Icon-text {
+  font-size: x-large;
+  margin: 0;
+}
+.EchoMessage-Text {
+  font-size: x-large;
+  font-style: italic;
+  margin-bottom: 0;
+  font-weight: lighter;
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 480px) {
+  .Icon-text {
+    font-size: larger;
     margin: 0;
-}
-.EchoMessage-Text{
-    font-size: x-large;
-    font-style: italic;
-    margin-bottom: 0;
-    font-weight: lighter;
+  }
+  .EchoMessage-Text {
+    font-size: large;
+  }
 }

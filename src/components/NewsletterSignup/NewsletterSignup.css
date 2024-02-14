@@ -65,13 +65,24 @@
 @media screen and (max-width: 600px) {
   #SignupButton {
     height: 3.1em;
+    width: 20vw;
   }
   #SignupInput {
     margin-top: 0.5em;
     width: 50vw;
     height: 3em;
   }
-  .signupform{
-    display:flex
+  .signupform {
+    display: flex;
+  }
+}
+@media screen and (max-width: 480px) {
+  #SignupInput {
+    width: 60vw;
+  }
+  #SignupButton {
+    height: 3.1em;
+    width: 24vw;
+    font-size: medium;
   }
 }

@@ -4,11 +4,11 @@
   height: fit-content;
   align-items: center;
   min-width: 100vw;
-  background-color: rgb(254, 249, 245)
+  background-color: rgb(254, 249, 245);
 }
 .About-Prop {
   height: 100%;
-  width: 65vw;;
+  width: 65vw;
 }
 .About-Content {
   width: 56vw;
@@ -31,7 +31,7 @@
 .About-Prop-Para:hover {
   transform: scale(1.05);
 }
-.About-Image-prop{
+.About-Image-prop {
   align-items: center;
   justify-content: center;
   margin: auto;
@@ -41,8 +41,45 @@
   height: 100%;
   width: 25vw;
   transition: transform 0.4s ease;
-
 }
 .AboutIMG:hover {
   transform: scale(1.05);
+}
+@media screen and (max-width: 768px) {
+  .About-Prop-Heading {
+    font-size: 3em;
+  }
+  .About-Prop-SubHeading {
+    font-size: 1.5em;
+  }
+  .About-Prop-Para {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .About-Container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1em;
+  }
+  .AboutIMG {
+    height: 34vh;
+    width: 68vw;
+  }
+  .About-Prop {
+    width: auto;
+  }
+  .About-Content {
+    width: auto;
+    padding: 0.5em;
+  }
+  .About-Prop-Heading {
+    font-size: 2.5em;
+  }
+  .About-Prop-SubHeading {
+    font-size: 1.5em;
+  }
+  .About-Prop-Para {
+    font-size: 1em;
+  }
 }
